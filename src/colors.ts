@@ -1,4 +1,21 @@
-export const colors = {
+interface Colors {
+  dark: Array<string>;
+  darkblue: Array<string>;
+  greyblue: Array<string>;
+  purple: Array<string>;
+  greyyellow: Array<string>;
+  blue: Array<string>;
+  yellow: Array<string>;
+  lightred: Array<string>;
+  greygreen: Array<string>;
+  grey: Array<string>;
+  blackblue: Array<string>;
+  blackyellow: Array<string>;
+  green: Array<string>;
+  [key: string]: Array<string>;
+}
+
+export let colors: Colors = {
   dark: [
     "#e7e9eb",
     "#d0d4d7",
@@ -206,7 +223,7 @@ export const colors = {
     "#031515",
     "#020b0b"
   ],
-  "9": [
+  grey: [
     "#fcfdfd",
     "#fafbfc",
     "#f8f9fa",
@@ -229,7 +246,7 @@ export const colors = {
     "#2a2b2c",
     "#151616"
   ],
-  "10": [
+  blackblue: [
     "#e8e8ee",
     "#d2d1dd",
     "#bbbacc",
@@ -252,7 +269,7 @@ export const colors = {
     "#02010d",
     "#010107"
   ],
-  "11": [
+  blackyellow: [
     "#fffaed",
     "#fff6dc",
     "#fff2ca",
@@ -275,7 +292,7 @@ export const colors = {
     "#2f270c",
     "#181406"
   ],
-  "12": [
+  green: [
     "#edfaf7",
     "#dbf6ef",
     "#c9f1e8",
@@ -297,51 +314,5 @@ export const colors = {
     "#11392f",
     "#0b2620",
     "#061310"
-  ],
-  "13": [
-    "#f2f1ef",
-    "#e6e4df",
-    "#dad7cf",
-    "#cdcac0",
-    "#c1bdb0",
-    "#b5b0a0",
-    "#a9a390",
-    "#9c9681",
-    "#908971",
-    "#847c61",
-    "#786f52",
-    "#6e654b",
-    "#635b44",
-    "#58513c",
-    "#4d4735",
-    "#423d2d",
-    "#373326",
-    "#2c291e",
-    "#211f17",
-    "#16150f",
-    "#0b0b08"
-  ],
-  "14": [
-    "#fff2f0",
-    "#ffe5e1",
-    "#ffd8d2",
-    "#ffcbc3",
-    "#ffbeb4",
-    "#ffb1a5",
-    "#ffa496",
-    "#ff9787",
-    "#ff8a78",
-    "#ff7d69",
-    "#ff715b",
-    "#e86753",
-    "#d15d4b",
-    "#ba5343",
-    "#a3483a",
-    "#8c3e32",
-    "#74342a",
-    "#5d2a22",
-    "#461f19",
-    "#2f1511",
-    "#180b09"
   ]
 };

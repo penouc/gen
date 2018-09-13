@@ -11,11 +11,71 @@
     "Other"
   ],
   "activationEvents": [
+    "onCommand:extension.gen.color.dark",
+    "onCommand:extension.gen.color.darkblue",
+    "onCommand:extension.gen.color.greyblue",
+    "onCommand:extension.gen.color.purple",
+    "onCommand:extension.gen.color.greyyellow",
+    "onCommand:extension.gen.color.blue",
+    "onCommand:extension.gen.color.yellow",
+    "onCommand:extension.gen.color.lightred",
+    "onCommand:extension.gen.color.greygreen",
+    "onCommand:extension.gen.color.grey",
+    "onCommand:extension.gen.color.blackblue",
+    "onCommand:extension.gen.color.blackyellow",
     "onCommand:extension.gen.color.green"
   ],
   "main": "./out/extension",
   "contributes": {
     "commands": [
+      {
+        "command": "extension.gen.color.dark",
+        "title": "gen: color dark"
+      },
+      {
+        "command": "extension.gen.color.darkblue",
+        "title": "gen: color darkblue"
+      },
+      {
+        "command": "extension.gen.color.greyblue",
+        "title": "gen: color greyblue"
+      },
+      {
+        "command": "extension.gen.color.purple",
+        "title": "gen: color purple"
+      },
+      {
+        "command": "extension.gen.color.greyyellow",
+        "title": "gen: color greyyellow"
+      },
+      {
+        "command": "extension.gen.color.blue",
+        "title": "gen: color blue"
+      },
+      {
+        "command": "extension.gen.color.yellow",
+        "title": "gen: color yellow"
+      },
+      {
+        "command": "extension.gen.color.lightred",
+        "title": "gen: color lightred"
+      },
+      {
+        "command": "extension.gen.color.greygreen",
+        "title": "gen: color greygreen"
+      },
+      {
+        "command": "extension.gen.color.grey",
+        "title": "gen: color grey"
+      },
+      {
+        "command": "extension.gen.color.blackblue",
+        "title": "gen: color blackblue"
+      },
+      {
+        "command": "extension.gen.color.blackyellow",
+        "title": "gen: color blackyellow"
+      },
       {
         "command": "extension.gen.color.green",
         "title": "gen: color green"
