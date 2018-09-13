@@ -3,6 +3,7 @@
   "displayName": "congen",
   "description": "code generator, content generator, snippet, colors generator",
   "version": "0.0.1",
+  "icon": "images/G.png",
   "publisher": "penouc",
   "engines": {
     "vscode": "^1.27.0"
