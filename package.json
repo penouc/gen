@@ -7,7 +7,7 @@
   "engines": {
     "vscode": "^1.27.0"
   },
-  "repository": "git@github.com:penouc/gen.git",
+  "repository": "https://github.com/penouc/gen",
   "categories": [
     "Other"
   ],
