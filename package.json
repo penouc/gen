@@ -23,11 +23,21 @@
     "onCommand:extension.gen.color.grey",
     "onCommand:extension.gen.color.blackblue",
     "onCommand:extension.gen.color.blackyellow",
-    "onCommand:extension.gen.color.green"
+    "onCommand:extension.gen.color.green",
+    "onCommand:extension.gen.geom.point",
+    "onCommand:extension.gen.geom.lineString"
   ],
   "main": "./out/extension",
   "contributes": {
     "commands": [
+      {
+        "command": "extension.gen.geom.point",
+        "title": "gen: geom point"
+      },
+      {
+        "command": "extension.gen.geom.lineString",
+        "title": "gen: geom lineString"
+      },
       {
         "command": "extension.gen.color.dark",
         "title": "gen: color dark"

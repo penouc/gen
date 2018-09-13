@@ -3,6 +3,7 @@
 // Import the module and reference it with the alias vscode in your code below
 import * as vscode from "vscode";
 import { colors } from "./colors";
+import { genPoint, genLineString } from "./geom";
 const pkg = require("../package.json");
 
 // this method is called when your extension is activated
@@ -20,13 +21,22 @@ export function activate(context: vscode.ExtensionContext) {
     let disposable = vscode.commands.registerTextEditorCommand(
       cmd.command,
       (editor, edit, args) => {
-        let name: string = cmd.command.split(".").pop();
+        let cmdAr = cmd.command.split(".");
+        let name: string = cmdAr.pop();
+        let typeName: string = cmdAr.pop();
 
         editor.edit(textEditorEdit => {
-          textEditorEdit.insert(
-            editor.selection.active,
-            JSON.stringify(colors[name])
-          );
+          let insertValue = "";
+          if (typeName === "color") {
+            insertValue = JSON.stringify(colors[name]);
+          } else if (typeName === "geom") {
+            if (name === "point") {
+              insertValue = JSON.stringify(genPoint());
+            } else if (name === "lineString") {
+              insertValue = JSON.stringify(genLineString(10));
+            }
+          }
+          textEditorEdit.insert(editor.selection.active, insertValue);
         });
       }
     );
