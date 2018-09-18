@@ -11,7 +11,7 @@ function RandomNumBoth(Min: number, Max: number) {
 }
 
 function genPoint() {
-  return [RandomNumBoth(MIN_LONG, MAX_LONG), RandomNumBoth(MIN_LAT, MAX_LAT)];
+  return [RandomNumBoth(MAX_LONG, MIN_LONG), RandomNumBoth(MAX_LAT, MIN_LAT)];
 }
 
 function genLineString(n: number) {
