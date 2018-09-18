@@ -3,10 +3,10 @@ const MAX_LAT = 40.001919856873684;
 const MIN_LONG = 116.2558753046581;
 const MIN_LAT = 39.82178159626318;
 
-function RandomNumBoth(Min: number, Max: number) {
+function RandomNumBoth(Max: number, Min: number) {
   var Range = Max - Min;
   var Rand = Math.random();
-  var num = Min + Math.round(Rand * Range); //四舍五入
+  var num = Min + Rand * Range; //四舍五入
   return num;
 }
 
